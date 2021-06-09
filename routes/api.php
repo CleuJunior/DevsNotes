@@ -28,7 +28,7 @@ Route::get("/ping", function(Request $request){
 
 Route::get('/notes', [NoteController::class, 'all']);
 
-// Route::get('/note/{id}');
+Route::get('/note/{id}', [NoteController::class, 'one']);
 
 // Route::post('/note', );
 
