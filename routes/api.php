@@ -32,6 +32,6 @@ Route::get('/note/{id}', [NoteController::class, 'one']);
 
 Route::post('/note', [NoteController::class, 'newNote']);
 
-// Route::put('/note/{id}');
+ Route::put('/note/{id}', [NoteController::class, 'edit']);
 
 // Route::put('/note/{id}');
